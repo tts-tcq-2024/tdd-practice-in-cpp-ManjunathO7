@@ -2,7 +2,7 @@
 #include <vector>
 #include "StringCalculator.h"
 
-int add(const std::string& input)
+int add(std::string input)
 {
   if(input.empty())
   {
