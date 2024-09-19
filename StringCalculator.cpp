@@ -11,14 +11,14 @@ int StringCalculator::add(const std::string& input) {
     std::string validatedInput = handleCustomDelimiter(input);
     validatedInput = normalizeDelimiters(validatedInput);
     negativeNumbersCheck(validatedInput);
-    return numbersSum(validatedInput);
+    return SumOfNumbersLessThan1000(validatedInput);
 }
  
 bool StringCalculator::isZeroOrEmpty(const std::string& input) {
     return input.empty() || input == "0";
 }
 
-int StringCalculator::numbersSum(const std::string& input) {
+int StringCalculator::SumOfNumbersLessThan1000(const std::string& input) {
     std::istringstream stream(input);
     std::string number;
     int sum = 0;
