@@ -1,7 +1,8 @@
 #include "StringCalculator.h"
-
+#include<iostream>
 #include <sstream>
 #include <algorithm>
+using namespace std;
 
 int StringCalculator::add(const std::string& input) {
     if (isZeroOrEmpty(input))
