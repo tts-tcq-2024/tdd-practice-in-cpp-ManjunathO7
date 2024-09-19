@@ -38,7 +38,8 @@ void StringCalculator::negativeNumbersCheck(const std::string& input) {
     {
         if (std::stoi(number) < 0)
         {
-            throw std::runtime_error("Negative numbers not allowed");
+            std::cout<<("Negative numbers not allowed");
+            exit(0);
         }
     }
 }
