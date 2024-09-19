@@ -1,8 +1,15 @@
-#ifnedef STRINGCALCULATOR_H
+#ifndef STRINGCALCULATOR_H
 #define STRINGCALCULATOR_H
 #include <string>
-using namespace std;
-
-int add(std::string input);
-
-#endif
+class StringCalculator {
+public:
+    int add(const std::string& input);
+ 
+private:
+bool isZeroOrEmpty(const std::string& input);
+int numbersSum(const std::string& input);
+void negativeNumbersCheck(const std::string& input);
+std::string normalizeDelimiters(const std::string& input);
+std::string handleCustomDelimiter(const std::string& input);
+};
+#endif // STRINGCALCULATOR_H
